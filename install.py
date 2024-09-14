@@ -47,7 +47,7 @@ def install_requirements(
         )
 
     if is_chapter6:
-        transformers_cmd = "python -m pip install datasets==2.0.0".split()
+        transformers_cmd = "python -m pip install datasets".split()
         process_scatter = subprocess.run(
             transformers_cmd,
             stdout=subprocess.PIPE,
